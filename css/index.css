@@ -1,0 +1,36 @@
+body{
+	border: 1px solid teal;
+	height: 500px;
+	margin: 50px;
+}
+
+form{
+	min-width:300px;
+	border: 1px solid teal;
+	width : 30%;
+	margin : auto ;
+	padding: 30px 50px;
+	
+}
+form > *{
+	margin-left: 50px;
+	
+}
+.input{
+	min-width:220px;
+	padding:8px;
+	margin-top:10px;
+	margin-bottom:30px;
+	width: 70%;
+}
+h3{
+	padding-top: 50px;
+	width: 30%;
+	margin : 0 auto ;
+	padding-bottom:20px;
+}
+button{
+	width:80px;
+	height:40px;
+	background-color: white;
+}
