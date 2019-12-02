@@ -1,0 +1,89 @@
+<html>
+	
+	<head>
+		<script src='../js/jquery.js' type ='text/javascript'></script>
+		<link href='../css/productList.css' type = 'text/css' rel= 'stylesheet'>
+		
+		
+		
+	</head>
+	<body>
+		<p id='dispName'>Username: </p><br><br><br>
+		<!--Adding modal for changing password-->
+		<div id= 'div'>
+			<div id='divContent'>
+				<span>&times;</span><br><br>
+				<label class='divLabel'>Enter current Password&nbsp;:&nbsp;&nbsp;</label>
+				<input type ='text' class='change'><b class='eye'>&#36;</b><br>
+				<label class='divLabel'>Enter new Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;</label>
+				<input type ='text' class='change'><b class='eye'>&#36;</b><br>
+				<label class='divLabel'>Confirm new Password&nbsp&nbsp:&nbsp;&nbsp;</label>
+				<input type ='text' class='change'><b class='eye'>&#36;</b><br>
+				<button id='ok'>OK</button>
+				<button id='cancel'>CANCEL</button>
+			</div>
+		</div>
+		<button id='changeBut'>Change Password</button><h3 >Product List</h3> <button class ='logout' >Logout</button><br><br>
+		<button id='cart'>Shopping Cart</button><br>
+		<table >
+			<tr>
+				<th>S.No</th>
+				<th>Product</th>
+				<th>Manufacturer</th>
+				<th>Price (INR)</th>
+				<th>Action</th>
+			</tr>
+			<tbody id='tbody'>
+			<tr>
+				<td  class="sno">1</td>
+				<td>Mobile Phone</td>
+				<td>Samsung</td>
+				<td>15000</td>
+				<td class='action'>Add</td>
+			</tr>
+			<tr>
+				<td  class="sno">2</td>
+				<td>Camera</td>
+				<td>Nikon</td>
+				<td>20000</td>
+				<td class="action">Add</td>
+			</tr>
+			<tr>
+				<td class="sno">3</td>
+				<td>Camera Tripod</td>
+				<td>Nikon</td>
+				<td>800</td>
+				<td class="action">Add</td>
+			</tr>
+			<tr>
+				<td class="sno">4</td>
+				<td>Laptop</td>
+				<td>Dell</td>
+				<td>40000</td>
+				<td class="action">Add</td>
+			</tr>
+			<tr>
+				<td  class="sno">5</td>
+				<td>Printer</td>
+				<td>HP</td>
+				<td>7000</td>
+				<td class="action">Add</td>
+			</tr>
+			</tbody>
+		</table>
+		<!-- Modal for Editing product-->
+		<div id='editModal'>
+			<div id='editContent'>
+				<span id='editClose'>&times;</span><br><br>
+				<label for='input1'>Enter Product Name :</label>
+				<input id = 'input1' type='text' class='editInput' /><br>
+				<label for='input3'>Enter Product Manufacturer :</label>
+				<input id = 'input3' type='text' class='editInput' /><br>
+				<label for='input2'>Enter Product Price :</label>
+				<input id = 'input2' type='text' class='editInput' /><br>
+				<button id='editOk'> OK </button><button id='editCancel'>CANCEL </button>
+			</div>
+		</div>
+		<script type = 'text/javascript' src='../js/productList.js' ></script>
+	</body>
+</html>
